@@ -1,7 +1,5 @@
 #!/bin/bash
-echo "Switching to source directory"
-cd ../
-echo "Started removing the repos"
+echo "Started deleting the repos"
 rm -rf frameworks/base
 rm -rf frameworks/av
 rm -rf device/custom/sepolicy
@@ -10,7 +8,7 @@ rm -rf packages/apps/Settings
 rm -rf packages/apps/Updates
 rm -rf vendor/aosp
 echo "Repo deletion completed"
-echo " "
+echo "---___--- "
 echo "Downloading forked repos"
 git clone -b thirteen https://github.com/userariii/frameworks_base.git frameworks/base --depth=1
 git clone -b thirteen https://github.com/userariii/frameworks_av.git frameworks/av --depth=1
